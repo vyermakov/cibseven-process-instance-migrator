@@ -50,15 +50,8 @@
 	<distributionManagement>
 		<repository>
 			<id>maven-central</id>
-			<name>Sonatype Nexus release repository</name>
-			<url>
-				https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<url>https://central.sonatype.com/api/v1/publisher/deployments/</url>
 		</repository>
-		<snapshotRepository>
-			<id>maven-central</id>
-			<name>Sonatype Nexus snapshot repository</name>
-			<url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
-		</snapshotRepository>
 	</distributionManagement>
 
 	<properties>
@@ -203,14 +196,15 @@
 
 			<!-- Deployment -->
 			<plugin>
-				<groupId>org.sonatype.plugins</groupId>
-				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<version>1.7.0</version>
+				<groupId>org.sonatype.central</groupId>
+				<artifactId>central-publishing-maven-plugin</artifactId>
+				<version>0.4.0</version>
 				<extensions>true</extensions>
 				<configuration>
-					<serverId>maven-central</serverId>
-					<nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>  
-					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+					<publishingServerId>maven-central</publishingServerId>  <!--
+					MATCHES settings.xml -->
+					<tokenAuth>true</tokenAuth>
+					<autoPublish>true</autoPublish>
 				</configuration>
 			</plugin>
 
@@ -233,7 +227,7 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-gpg-plugin</artifactId>
-						<version>1.4</version>
+						<version>3.1.0</version>
 						<executions>
 							<execution>
 								<id>sign-artifacts</id>
