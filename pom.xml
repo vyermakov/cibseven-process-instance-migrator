@@ -44,7 +44,7 @@
 			scm:git:git:/github.com/vyermakov/cibseven-process-instance-migrator.git</connection>
 		<developerConnection>
 			scm:git:git@github.com:vyermakov/cibseven-process-instance-migrator.git</developerConnection>
-		<tag>1.0.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
