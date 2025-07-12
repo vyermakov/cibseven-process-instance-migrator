@@ -1,6 +1,6 @@
-# Camunda Process Instance Migrator
+# CIB Seven Process Instance Migrator
 
-This tool will allow you to automatically or semi-automatically migrate all of your Camunda Process Instances whenever you release a new version.
+This tool will allow you to automatically or semi-automatically migrate all of your CIB Seven Process Instances whenever you release a new version.
 
 ## Why should I use this?
 
@@ -149,3 +149,9 @@ Secondly, the migrator was built to be robust and informative. Any action the mi
 ## Can I contribute?
 
 Of course! Add an issue, submit a pull request. We will be happy to extend the tool with your help.
+
+## Credits
+
+This project is forked from [NovatecConsulting/camunda-process-instance-migrator](https://github.com/NovatecConsulting/camunda-process-instance-migrator).
+
+Original authors: NovatecConsulting team

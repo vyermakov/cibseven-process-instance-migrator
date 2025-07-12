@@ -3,7 +3,7 @@ package info.novatec.camunda.migrator.integration.assertions;
 import java.util.List;
 
 import org.assertj.core.api.Assertions;
-import org.camunda.bpm.engine.task.Task;
+import org.cibseven.bpm.engine.task.Task;
 
 import lombok.RequiredArgsConstructor;
 

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-import org.camunda.bpm.engine.impl.migration.MigrationInstructionImpl;
-import org.camunda.bpm.engine.migration.MigrationInstruction;
+import org.cibseven.bpm.engine.impl.migration.MigrationInstructionImpl;
+import org.cibseven.bpm.engine.migration.MigrationInstruction;
 
 public class MigrationInstructionCombiner {
 

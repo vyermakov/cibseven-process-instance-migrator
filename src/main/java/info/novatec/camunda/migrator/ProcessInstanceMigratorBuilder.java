@@ -1,6 +1,6 @@
 package info.novatec.camunda.migrator;
 
-import org.camunda.bpm.engine.ProcessEngine;
+import org.cibseven.bpm.engine.ProcessEngine;
 
 import info.novatec.camunda.migrator.instances.GetOlderProcessInstances;
 import info.novatec.camunda.migrator.instances.GetOlderProcessInstancesDefaultImpl;

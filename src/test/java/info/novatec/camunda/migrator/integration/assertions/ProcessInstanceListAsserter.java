@@ -2,7 +2,7 @@ package info.novatec.camunda.migrator.integration.assertions;
 
 import lombok.RequiredArgsConstructor;
 import org.assertj.core.api.Assertions;
-import org.camunda.bpm.engine.runtime.ProcessInstance;
+import org.cibseven.bpm.engine.runtime.ProcessInstance;
 import java.util.List;
 
 @RequiredArgsConstructor

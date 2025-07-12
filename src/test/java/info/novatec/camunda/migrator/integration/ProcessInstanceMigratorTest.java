@@ -1,21 +1,32 @@
 package info.novatec.camunda.migrator.integration;
 
-import org.camunda.bpm.engine.repository.ProcessDefinition;
-import org.camunda.bpm.engine.runtime.ProcessInstance;
-import org.camunda.bpm.engine.test.ProcessEngineRule;
+import static info.novatec.camunda.migrator.integration.TestHelper.deployBPMNFromClasspathResource;
+import static info.novatec.camunda.migrator.integration.TestHelper.getCurrentTasks;
+import static info.novatec.camunda.migrator.integration.TestHelper.getNewestDeployedProcessDefinitionId;
+import static info.novatec.camunda.migrator.integration.TestHelper.getRunningProcessInstances;
+import static info.novatec.camunda.migrator.integration.TestHelper.startProcessInstance;
+import static info.novatec.camunda.migrator.integration.TestHelper.suspendProcessDefinition;
+import static info.novatec.camunda.migrator.integration.TestHelper.suspendProcessInstance;
+import static info.novatec.camunda.migrator.integration.assertions.ProcessInstanceListAsserter.assertThat;
+import static info.novatec.camunda.migrator.integration.assertions.TaskListAsserter.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.cibseven.bpm.engine.test.assertions.bpmn.AbstractAssertions.processEngine;
+import static org.cibseven.bpm.engine.test.assertions.bpmn.BpmnAwareTests.assertThat;
+import static org.cibseven.bpm.engine.test.assertions.bpmn.BpmnAwareTests.complete;
+import static org.cibseven.bpm.engine.test.assertions.bpmn.BpmnAwareTests.repositoryService;
+import static org.cibseven.bpm.engine.test.assertions.bpmn.BpmnAwareTests.runtimeService;
+import static org.cibseven.bpm.engine.test.assertions.bpmn.BpmnAwareTests.task;
+import static org.cibseven.bpm.engine.test.assertions.bpmn.BpmnAwareTests.taskService;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+
+import org.cibseven.bpm.engine.repository.ProcessDefinition;
+import org.cibseven.bpm.engine.runtime.ProcessInstance;
+import org.cibseven.bpm.engine.test.ProcessEngineRule;
 import org.junit.After;
 import org.junit.ClassRule;
 import org.junit.Test;
 
 import info.novatec.camunda.migrator.ProcessInstanceMigrator;
-
-import static info.novatec.camunda.migrator.integration.TestHelper.*;
-import static info.novatec.camunda.migrator.integration.assertions.ProcessInstanceListAsserter.assertThat;
-import static info.novatec.camunda.migrator.integration.assertions.TaskListAsserter.assertThat;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.camunda.bpm.engine.test.assertions.bpmn.BpmnAwareTests.*;
-import static org.camunda.bpm.engine.test.assertions.bpmn.BpmnAwareTests.assertThat;
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 public class ProcessInstanceMigratorTest {
 

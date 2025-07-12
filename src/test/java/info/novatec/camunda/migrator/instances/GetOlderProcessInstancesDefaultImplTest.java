@@ -2,17 +2,17 @@ package info.novatec.camunda.migrator.instances;
 
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.camunda.bpm.extension.mockito.QueryMocks.mockProcessDefinitionQuery;
-import static org.camunda.bpm.extension.mockito.QueryMocks.mockProcessInstanceQuery;
-import static org.mockito.Mockito.*;
+import static org.cibseven.community.mockito.QueryMocks.mockProcessDefinitionQuery;
+import static org.cibseven.community.mockito.QueryMocks.mockProcessInstanceQuery;
+import static org.mockito.Mockito.when;
 
 import java.util.List;
 
-import org.camunda.bpm.engine.ProcessEngine;
-import org.camunda.bpm.engine.RepositoryService;
-import org.camunda.bpm.engine.RuntimeService;
-import org.camunda.bpm.engine.repository.ProcessDefinition;
-import org.camunda.bpm.engine.runtime.ProcessInstance;
+import org.cibseven.bpm.engine.ProcessEngine;
+import org.cibseven.bpm.engine.RepositoryService;
+import org.cibseven.bpm.engine.RuntimeService;
+import org.cibseven.bpm.engine.repository.ProcessDefinition;
+import org.cibseven.bpm.engine.runtime.ProcessInstance;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

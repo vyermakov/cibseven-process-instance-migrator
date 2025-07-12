@@ -4,11 +4,11 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import org.camunda.bpm.engine.ProcessEngine;
-import org.camunda.bpm.engine.migration.MigrationInstruction;
-import org.camunda.bpm.engine.migration.MigrationPlan;
-import org.camunda.bpm.engine.repository.ProcessDefinition;
-import org.camunda.bpm.engine.runtime.ProcessInstance;
+import org.cibseven.bpm.engine.ProcessEngine;
+import org.cibseven.bpm.engine.migration.MigrationInstruction;
+import org.cibseven.bpm.engine.migration.MigrationPlan;
+import org.cibseven.bpm.engine.repository.ProcessDefinition;
+import org.cibseven.bpm.engine.runtime.ProcessInstance;
 
 import info.novatec.camunda.migrator.instances.GetOlderProcessInstances;
 import info.novatec.camunda.migrator.instances.VersionedProcessInstance;

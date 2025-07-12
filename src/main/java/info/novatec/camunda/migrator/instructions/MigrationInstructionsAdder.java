@@ -3,8 +3,8 @@ package info.novatec.camunda.migrator.instructions;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.camunda.bpm.engine.migration.MigrationInstruction;
-import org.camunda.bpm.engine.migration.MigrationPlan;
+import org.cibseven.bpm.engine.migration.MigrationInstruction;
+import org.cibseven.bpm.engine.migration.MigrationPlan;
 
 public class MigrationInstructionsAdder {
 

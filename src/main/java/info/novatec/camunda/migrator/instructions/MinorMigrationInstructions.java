@@ -3,7 +3,7 @@ package info.novatec.camunda.migrator.instructions;
 import java.util.List;
 
 
-import org.camunda.bpm.engine.migration.MigrationInstruction;
+import org.cibseven.bpm.engine.migration.MigrationInstruction;
 
 import lombok.Builder;
 import lombok.Getter;

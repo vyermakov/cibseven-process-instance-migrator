@@ -3,7 +3,7 @@ package info.novatec.camunda.migrator.instances;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.camunda.bpm.engine.ProcessEngine;
+import org.cibseven.bpm.engine.ProcessEngine;
 
 import info.novatec.camunda.migrator.ProcessVersion;
 import lombok.RequiredArgsConstructor;

@@ -1,19 +1,27 @@
 package info.novatec.camunda.migrator.integration;
 
-import static info.novatec.camunda.migrator.integration.TestHelper.*;
+import static info.novatec.camunda.migrator.integration.TestHelper.deployBPMNFromClasspathResource;
+import static info.novatec.camunda.migrator.integration.TestHelper.getCurrentTasks;
+import static info.novatec.camunda.migrator.integration.TestHelper.getNewestDeployedProcessDefinitionId;
+import static info.novatec.camunda.migrator.integration.TestHelper.getRunningProcessInstances;
+import static info.novatec.camunda.migrator.integration.TestHelper.startProcessInstance;
 import static info.novatec.camunda.migrator.integration.assertions.ProcessInstanceListAsserter.assertThat;
 import static info.novatec.camunda.migrator.integration.assertions.TaskListAsserter.assertThat;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.camunda.bpm.engine.test.assertions.bpmn.AbstractAssertions.processEngine;
-import static org.camunda.bpm.engine.test.assertions.bpmn.BpmnAwareTests.*;
+import static org.cibseven.bpm.engine.test.assertions.bpmn.AbstractAssertions.processEngine;
+import static org.cibseven.bpm.engine.test.assertions.bpmn.BpmnAwareTests.complete;
+import static org.cibseven.bpm.engine.test.assertions.bpmn.BpmnAwareTests.repositoryService;
+import static org.cibseven.bpm.engine.test.assertions.bpmn.BpmnAwareTests.runtimeService;
+import static org.cibseven.bpm.engine.test.assertions.bpmn.BpmnAwareTests.task;
+import static org.cibseven.bpm.engine.test.assertions.bpmn.BpmnAwareTests.taskService;
 
 import java.util.Arrays;
 import java.util.List;
 
-import org.camunda.bpm.engine.impl.migration.MigrationInstructionImpl;
-import org.camunda.bpm.engine.repository.ProcessDefinition;
-import org.camunda.bpm.engine.runtime.ProcessInstance;
-import org.camunda.bpm.engine.test.ProcessEngineRule;
+import org.cibseven.bpm.engine.impl.migration.MigrationInstructionImpl;
+import org.cibseven.bpm.engine.repository.ProcessDefinition;
+import org.cibseven.bpm.engine.runtime.ProcessInstance;
+import org.cibseven.bpm.engine.test.ProcessEngineRule;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.ClassRule;
