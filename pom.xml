@@ -20,7 +20,7 @@
 
 	<groupId>com.jeevision.bpm</groupId>
 	<artifactId>cibseven-process-instance-migrator</artifactId>
-	<version>1.2.0-SNAPSHOT</version>
+	<version>1.2.0</version>
 
 	<name>CIB Seven Process Instance Migrator</name>
 	<description>Process Instance Migrator for CIB Seven BPM</description>
@@ -42,7 +42,7 @@
 			scm:git:git:/github.com/vyermakov/cibseven-process-instance-migrator.git</connection>
 		<developerConnection>
 			scm:git:git@github.com:vyermakov/cibseven-process-instance-migrator.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>cibseven-process-instance-migrator-1.2.0</tag>
 	</scm>
 
 	<distributionManagement>
