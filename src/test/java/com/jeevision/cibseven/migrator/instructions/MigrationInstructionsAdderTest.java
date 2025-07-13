@@ -1,4 +1,4 @@
-package info.novatec.camunda.migrator.instructions;
+package com.jeevision.cibseven.migrator.instructions;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.verify;
@@ -19,8 +19,6 @@ import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
-
-import com.jeevision.cibseven.migrator.instructions.MigrationInstructionsAdder;
 
 @ExtendWith(MockitoExtension.class)
 @MockitoSettings(strictness = Strictness.LENIENT)

@@ -1,12 +1,10 @@
-package info.novatec.camunda.migrator;
+package com.jeevision.cibseven.migrator;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-
-import com.jeevision.cibseven.migrator.ProcessVersion;
 
 public class ProcessVersionTest {
 

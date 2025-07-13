@@ -1,4 +1,4 @@
-package info.novatec.camunda.migrator.integration.assertions;
+package com.jeevision.cibseven.migrator.integration.assertions;
 
 import java.util.List;
 

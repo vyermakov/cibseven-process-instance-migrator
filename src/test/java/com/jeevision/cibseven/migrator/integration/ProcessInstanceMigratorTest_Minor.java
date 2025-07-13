@@ -1,12 +1,12 @@
-package info.novatec.camunda.migrator.integration;
+package com.jeevision.cibseven.migrator.integration;
 
-import static info.novatec.camunda.migrator.integration.TestHelper.deployBPMNFromClasspathResource;
-import static info.novatec.camunda.migrator.integration.TestHelper.getCurrentTasks;
-import static info.novatec.camunda.migrator.integration.TestHelper.getNewestDeployedProcessDefinitionId;
-import static info.novatec.camunda.migrator.integration.TestHelper.getRunningProcessInstances;
-import static info.novatec.camunda.migrator.integration.TestHelper.startProcessInstance;
-import static info.novatec.camunda.migrator.integration.assertions.ProcessInstanceListAsserter.assertThat;
-import static info.novatec.camunda.migrator.integration.assertions.TaskListAsserter.assertThat;
+import static com.jeevision.cibseven.migrator.integration.TestHelper.deployBPMNFromClasspathResource;
+import static com.jeevision.cibseven.migrator.integration.TestHelper.getCurrentTasks;
+import static com.jeevision.cibseven.migrator.integration.TestHelper.getNewestDeployedProcessDefinitionId;
+import static com.jeevision.cibseven.migrator.integration.TestHelper.getRunningProcessInstances;
+import static com.jeevision.cibseven.migrator.integration.TestHelper.startProcessInstance;
+import static com.jeevision.cibseven.migrator.integration.assertions.ProcessInstanceListAsserter.assertThat;
+import static com.jeevision.cibseven.migrator.integration.assertions.TaskListAsserter.assertThat;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.cibseven.bpm.engine.test.assertions.bpmn.AbstractAssertions.processEngine;
 import static org.cibseven.bpm.engine.test.assertions.bpmn.BpmnAwareTests.complete;

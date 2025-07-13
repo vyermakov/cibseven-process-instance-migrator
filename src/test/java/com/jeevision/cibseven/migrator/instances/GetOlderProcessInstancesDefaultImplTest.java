@@ -1,4 +1,4 @@
-package info.novatec.camunda.migrator.instances;
+package com.jeevision.cibseven.migrator.instances;
 
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -23,8 +23,6 @@ import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
 
 import com.jeevision.cibseven.migrator.ProcessVersion;
-import com.jeevision.cibseven.migrator.instances.GetOlderProcessInstancesDefaultImpl;
-import com.jeevision.cibseven.migrator.instances.VersionedProcessInstance;
 
 @ExtendWith(MockitoExtension.class)
 @MockitoSettings(strictness = Strictness.LENIENT)
