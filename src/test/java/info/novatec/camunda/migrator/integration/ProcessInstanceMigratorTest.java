@@ -26,7 +26,7 @@ import org.junit.After;
 import org.junit.ClassRule;
 import org.junit.Test;
 
-import info.novatec.camunda.migrator.ProcessInstanceMigrator;
+import com.jeevision.cibseven.migrator.ProcessInstanceMigrator;
 
 public class ProcessInstanceMigratorTest {
 

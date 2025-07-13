@@ -1,4 +1,4 @@
-package info.novatec.camunda.migrator;
+package com.jeevision.cibseven.migrator;
 
 /**
  * Exception to be thrown when an instance of {@link ProcessInstanceMigratorBuilder} attempts to build an instance of

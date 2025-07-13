@@ -22,7 +22,9 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
 
-import info.novatec.camunda.migrator.ProcessVersion;
+import com.jeevision.cibseven.migrator.ProcessVersion;
+import com.jeevision.cibseven.migrator.instances.GetOlderProcessInstancesDefaultImpl;
+import com.jeevision.cibseven.migrator.instances.VersionedProcessInstance;
 
 @ExtendWith(MockitoExtension.class)
 @MockitoSettings(strictness = Strictness.LENIENT)

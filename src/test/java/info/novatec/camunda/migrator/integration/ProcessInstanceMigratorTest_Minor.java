@@ -27,9 +27,9 @@ import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Test;
 
-import info.novatec.camunda.migrator.ProcessInstanceMigrator;
-import info.novatec.camunda.migrator.instructions.MigrationInstructionsMap;
-import info.novatec.camunda.migrator.instructions.MinorMigrationInstructions;
+import com.jeevision.cibseven.migrator.ProcessInstanceMigrator;
+import com.jeevision.cibseven.migrator.instructions.MigrationInstructionsMap;
+import com.jeevision.cibseven.migrator.instructions.MinorMigrationInstructions;
 
 public class ProcessInstanceMigratorTest_Minor {
 

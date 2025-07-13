@@ -1,8 +1,8 @@
-package info.novatec.camunda.migrator.instances;
+package com.jeevision.cibseven.migrator.instances;
 
 import java.util.List;
 
-import info.novatec.camunda.migrator.ProcessVersion;
+import com.jeevision.cibseven.migrator.ProcessVersion;
 
 public interface GetOlderProcessInstances {
 

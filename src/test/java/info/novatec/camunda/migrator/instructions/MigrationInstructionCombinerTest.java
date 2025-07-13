@@ -13,6 +13,9 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import com.jeevision.cibseven.migrator.instructions.MigrationInstructionCombiner;
+import com.jeevision.cibseven.migrator.instructions.MinorMigrationInstructions;
+
 @ExtendWith(MockitoExtension.class)
 public class MigrationInstructionCombinerTest {
 

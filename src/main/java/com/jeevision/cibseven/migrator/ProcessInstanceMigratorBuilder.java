@@ -1,15 +1,16 @@
-package info.novatec.camunda.migrator;
+package com.jeevision.cibseven.migrator;
 
 import org.cibseven.bpm.engine.ProcessEngine;
 
-import info.novatec.camunda.migrator.instances.GetOlderProcessInstances;
-import info.novatec.camunda.migrator.instances.GetOlderProcessInstancesDefaultImpl;
-import info.novatec.camunda.migrator.instructions.GetMigrationInstructions;
-import info.novatec.camunda.migrator.instructions.MigrationInstructionsMap;
-import info.novatec.camunda.migrator.logging.MigratorLogger;
-import info.novatec.camunda.migrator.logging.MigratorLoggerDefaultImpl;
-import info.novatec.camunda.migrator.plan.CreatePatchMigrationplan;
-import info.novatec.camunda.migrator.plan.CreatePatchMigrationplanDefaultImpl;
+import com.jeevision.cibseven.migrator.instances.GetOlderProcessInstances;
+import com.jeevision.cibseven.migrator.instances.GetOlderProcessInstancesDefaultImpl;
+import com.jeevision.cibseven.migrator.instructions.GetMigrationInstructions;
+import com.jeevision.cibseven.migrator.instructions.MigrationInstructionsMap;
+import com.jeevision.cibseven.migrator.logging.MigratorLogger;
+import com.jeevision.cibseven.migrator.logging.MigratorLoggerDefaultImpl;
+import com.jeevision.cibseven.migrator.plan.CreatePatchMigrationplan;
+import com.jeevision.cibseven.migrator.plan.CreatePatchMigrationplanDefaultImpl;
+
 import lombok.NoArgsConstructor;
 
 /**

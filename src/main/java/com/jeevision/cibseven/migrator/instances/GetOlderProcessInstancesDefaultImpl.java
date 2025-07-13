@@ -1,11 +1,12 @@
-package info.novatec.camunda.migrator.instances;
+package com.jeevision.cibseven.migrator.instances;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.cibseven.bpm.engine.ProcessEngine;
 
-import info.novatec.camunda.migrator.ProcessVersion;
+import com.jeevision.cibseven.migrator.ProcessVersion;
+
 import lombok.RequiredArgsConstructor;
 
 /**

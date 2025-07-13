@@ -1,6 +1,7 @@
-package info.novatec.camunda.migrator.instances;
+package com.jeevision.cibseven.migrator.instances;
 
-import info.novatec.camunda.migrator.ProcessVersion;
+import com.jeevision.cibseven.migrator.ProcessVersion;
+
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 

@@ -1,4 +1,4 @@
-package info.novatec.camunda.migrator.instructions;
+package com.jeevision.cibseven.migrator.instructions;
 
 import java.util.ArrayList;
 import java.util.Comparator;

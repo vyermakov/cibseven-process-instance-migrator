@@ -1,8 +1,8 @@
-package info.novatec.camunda.migrator.plan;
+package com.jeevision.cibseven.migrator.plan;
 
 import org.cibseven.bpm.engine.migration.MigrationPlan;
 
-import info.novatec.camunda.migrator.instances.VersionedProcessInstance;
+import com.jeevision.cibseven.migrator.instances.VersionedProcessInstance;
 
 public interface CreatePatchMigrationplan {
 

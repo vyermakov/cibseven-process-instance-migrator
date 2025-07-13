@@ -1,4 +1,4 @@
-package info.novatec.camunda.migrator;
+package com.jeevision.cibseven.migrator;
 
 import java.util.Optional;
 

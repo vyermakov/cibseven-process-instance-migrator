@@ -1,4 +1,4 @@
-package info.novatec.camunda.migrator.logging;
+package com.jeevision.cibseven.migrator.logging;
 
 import lombok.extern.slf4j.Slf4j;
 
